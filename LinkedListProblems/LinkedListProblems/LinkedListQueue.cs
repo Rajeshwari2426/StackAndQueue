@@ -46,5 +46,20 @@ namespace LinkedListProblems
                 }
             }
         }
+        //remove elements from queue
+        public void Dequeue()
+        {
+            if (this.front == null)
+            {
+                Console.WriteLine("Queue is Empty");
+                return;
+            }
+            Node temp = this.front;
+            this.front = front.next;
+            temp.next = null;
+            Console.WriteLine("{0} Dequeued from Queue", temp.data);
+        }
+        
+       
     }
 }

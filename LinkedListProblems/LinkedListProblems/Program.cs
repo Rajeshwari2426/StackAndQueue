@@ -30,6 +30,10 @@ namespace LinkedListProblems
             linkedListQueue.Enqueue(30);
             linkedListQueue.Enqueue(70);
             linkedListQueue.Display();
+            Console.WriteLine("<---Dequeue from Queue---> \n");
+            linkedListQueue.Dequeue();
+            linkedListQueue.Display();
+           
             Console.ReadLine();
         }
 
