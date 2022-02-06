@@ -34,5 +34,41 @@ namespace LinkedListProblems
                 temp = temp.next;
             }
         }
+        public void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is empty");
+                return;
+            }
+            Console.WriteLine("{0} is Peek element of Stack", top.data);
+        }
+        
+        /// remove the top element from stack.
+        
+        public void Pop()
+        {
+            Peek();
+            int deleteNode = this.top.data;
+            this.top = top.next;
+            Console.WriteLine("{0} Poped from stack", deleteNode);
+        }
+        
+        /// It will pop out all the elements from stack untill stack is empty.
+        
+        public void IsEmpty()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is empty");
+                return;
+            }
+            while (top != null)
+            {
+                Pop();
+            }
+            Console.WriteLine("All element Poped from Stack!");
+        }
+
     }
 }

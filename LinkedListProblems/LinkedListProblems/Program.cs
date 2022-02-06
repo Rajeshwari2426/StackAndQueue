@@ -15,8 +15,17 @@ namespace LinkedListProblems
             linkedListStack.Push(56);
             linkedListStack.Push(30);
             linkedListStack.Push(70);
-         linkedListStack.Display();
+            linkedListStack.Display();
+            linkedListStack.Peek();
+            linkedListStack.Display();
+            
+            linkedListStack.Pop();
+            linkedListStack.Display();
+            
+            linkedListStack.IsEmpty();
+            linkedListStack.Display();
             Console.ReadLine();
         }
+
     }
 }
