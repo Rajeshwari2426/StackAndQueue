@@ -24,6 +24,12 @@ namespace LinkedListProblems
             
             linkedListStack.IsEmpty();
             linkedListStack.Display();
+            Console.WriteLine("<---Creating A Queue---> \n");
+            LinkedListQueue linkedListQueue = new LinkedListQueue();
+            linkedListQueue.Enqueue(56);
+            linkedListQueue.Enqueue(30);
+            linkedListQueue.Enqueue(70);
+            linkedListQueue.Display();
             Console.ReadLine();
         }
 
